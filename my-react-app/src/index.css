@@ -1,0 +1,247 @@
+@import "tailwindcss";
+/*HEADER STYLING*/
+header {
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #ff9ffc;
+}
+
+hr {
+  display: none;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: white;
+  font-size: 50px;
+}
+.experience-layout {
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10rem;
+}
+.wrapper {
+  padding: 0 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5rem;
+}
+
+.intro {
+  flex: 1;
+}
+img {
+  width: 100%;
+  max-width: 300px;
+  object-fit: cover;
+  vertical-align: middle;
+  border-radius: 20px;
+}
+
+.card-title {
+  font-family:
+    "Inter",
+    "Montserrat",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  color: white;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+}
+.card-text {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  font-weight: 400;
+  font-size: 0.95rem;
+  color: #e2e8f0;
+
+  line-height: 1.6;
+
+  letter-spacing: 0.01em;
+}
+
+.stack-wrapper {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  overflow: visible;
+  background: transparent;
+}
+
+/* Individual card layers */
+.stack-card {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  will-change: transform, opacity;
+}
+
+.card-content {
+  background-color: var(--card-color);
+  width: 70%;
+  height: 60vh;
+  border-radius: 24px;
+  padding: 40px;
+  box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.3);
+  background-color: var(--card-color) !important;
+
+  backdrop-filter: blur(12px) saturate(120%);
+  -webkit-backdrop-filter: blur(12px) saturate(120%);
+
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.25);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.portfolio-footer {
+  background: transparent !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  width: 100%;
+  padding: 30px 0 60px 0;
+  margin-top: 30px;
+}
+
+.footer-links a,
+.copyright {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.footer-links a:hover {
+  opacity: 1;
+  text-shadow: 0px 0px 8px #ff9ffc;
+  color: #ff9ffc;
+}
+
+.full-screen-section {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 80px 40px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  position: relative;
+}
+
+.full-screen-section > div,
+.education-card-class {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+.full-screen-section1 {
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.light-pillar-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  height: 100dvh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.light-pillar-container {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.light-pillar-fallback {
+  width: 100%;
+  height: 100%;
+  color: #777;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
