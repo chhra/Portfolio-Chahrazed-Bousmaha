@@ -1,16 +1,30 @@
-# React + Vite
+#  Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![React](https://img.shields.io/badge/React-18+-61dafb?logo=react&logoColor=white)](https://react.dev/)
+[![GSAP](https://img.shields.io/badge/Animations-GSAP%20%26%20Framer%20Motion-green?logo=greensock&logoColor=white)](https://gsap.com/)
 
-Currently, two official plugins are available:
+Welcome to the source code repository for my personal portfolio website. This project serves as an interactive, fluid digital resume and showcase of my academic milestones, software engineering capabilities, and professional journey across Full-Stack Development, AI/Machine Learning, and STEM Mentorship.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Highlights & Sections
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+*   **Academic Excellence:** Highlights completing my First Year of BSc Computer Science at UWE Bristol with a **90% overall average (First-Class Honours)**.
+*   **Industry Experience:** Interactive cards showcasing my technical work, including building AI-powered mobile apps and custom predictive models at **GNOVEX**.
+*   **STEM Leadership:** Showcases my educational impact teaching C#, 3D physics, and game development logic in Unity, as well as creative computing using TinkerCAD and Minecraft Education.
+*   **Dynamic Component Layouts:** Features an advanced, responsive card-stacking interface designed to present a sleek and concise storytelling experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tech Stack & Architecture
+
+This application was engineered with a focus on modular design, high-performance rendering, and seamless micro-interactions:
+
+| Layer | Technology | Purpose |
+| :--- | :--- | :--- |
+| **Frontend Framework** | **React (Vite)** | Component-driven, lightning-fast architecture with optimized bundle builds. |
+| **Animation Engine** | **GSAP (GreenSock)** | Powers complex `ScrollTrigger` timelines, driving the physical card-stacking interaction layer. |
+| **Micro-Interactions** | **Framer Motion** | Handles elegant, responsive entrance transitions and declarative UI state animations. |
+| **Smooth Scrolling** | **Lenis Scroll** | Normalizes scroll mechanics globally to eliminate jitter and harmonize with GSAP pinning. |
+| **Styling** | **Modern CSS / Tailwind** | Provides a responsive, clean grid layout optimized for all screen dimensions. |
+
