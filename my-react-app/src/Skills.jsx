@@ -15,7 +15,7 @@ const Skills = () => {
     { name: "C#", level: 80, category: "Languages" },
     { name: "Python-Flask", level: 80, category: "Backend" },
     { name: "Django", level: 80, category: "Backend" },
-    { name: "PHP", level: 60, category: "Backend" },
+    { name: "NODE.JS", level: 90, category: "Backend" },
     { name: "Unity Engine", level: 80, category: "Tools" },
     { name: "AR vuforia", level: 80, category: "Tools" },
     { name: "Git & Github", level: 80, category: "Tools" },
