@@ -10,6 +10,7 @@ const Skills = () => {
     { name: "NEXT.JS", level: 60, category: "Frontend" },
     { name: "Python", level: 100, category: "Languages" },
     { name: "C++", level: 100, category: "Languages" },
+    { name: "JS", level: 100, category: "Languages" },
     { name: "C", level: 80, category: "Languages" },
     { name: "C#", level: 80, category: "Languages" },
     { name: "Python-Flask", level: 80, category: "Backend" },
