@@ -49,7 +49,7 @@ const Skills = () => {
       </motion.h1>
 
       {/* Filter Buttons */}
-      <div className="flex justify-center items-center gap-2">
+      <div className="flex flex-wrap justify-center items-center gap-2 px-4">
         <button
           onClick={() => setSelectedCategory("All")}
           className={`z-50 px-4 py-2 bg-transparent rounded-lg font-semibold transition ${
@@ -95,7 +95,7 @@ const Skills = () => {
 
       {/* Grid Wrapper Container */}
       {/* FIXED: Changed semicolons to colons in "md:grid-cols-2" and "lg:grid-cols-3" */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-[70%] mx-auto mt-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-[90%] max-w-5xl mx-auto mt-10 px-2">
         {/* FIXED: Swapped parameter variable "skills" to singular "skill" */}
         {filteredskills.map((skill, key) => (
           <div

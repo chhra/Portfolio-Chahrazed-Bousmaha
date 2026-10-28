@@ -1,18 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 export default function Footer() {
-  const [copied, setCopied] = useState(false);
-
-  const myPhone = "+44 7367677291";
-
-  const handleCopyPhone = (e) => {
-    e.preventDefault();
-    navigator.clipboard.writeText(myPhone);
-
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
-
   return (
     <footer className="portfolio-footer">
       <div className="footer-content">
@@ -26,17 +14,6 @@ export default function Footer() {
               className="cursor-pointer text-white hover:text-pink-500 transition"
             >
               Email
-            </a>
-          </li>
-
-          {/* Phone number styled strictly as a link tag tracking onClick triggers */}
-          <li>
-            <a
-              href="#copy-phone"
-              onClick={handleCopyPhone}
-              className="phone-link"
-            >
-              {copied ? "Copied!" : "Phone Number"}
             </a>
           </li>
 

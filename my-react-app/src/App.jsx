@@ -6,18 +6,16 @@ import Education from "./Education.jsx";
 import Experience from "./Experience.jsx";
 import Skills from "./Skills.jsx";
 import FloatingLines from "./FloatingLines";
-import Photo1 from "./public/UWE_Bristol.png";
-import Photo2 from "./public/Baccalaureate.png";
-import Photo3 from "./public/CX.jpg";
-import Photo4 from "./public/kumon.jpg";
-import Photo5 from "./public/GNOVEX.png";
-import Photo6 from "./public/NC.png";
+import Photo1 from "../public/UWE_Bristol.png";
+import Photo2 from "../public/Baccalaureate.png";
+import Photo3 from "../public/CX.jpg";
+import Photo5 from "../public/GNOVEX.png";
 import { useScroll } from "framer-motion";
 import { motion } from "framer-motion";
 import Lenis from "lenis";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import Projects from "./Projects.jsx";
 gsap.registerPlugin(ScrollTrigger);
 
 const containerVariants = {
@@ -40,35 +38,26 @@ function App() {
       id: 1,
       title: "Intern - GNOVEX",
       startDate: 2026,
-      text: "Designing and deploying custom AI models and integrating them into full-stack, AI-powered mobile applications.",
+      text: "Built a multi-company invoicing platform with Laravel and Filament, covering clients, stock, and the full document flow (quotes, invoices, credit notes, delivery notes) with automatic PDF generation and email delivery. Added role-based access, per-company data isolation, revenue dashboards, and automated payment reminders.",
       photo: Photo5,
       color: "#483253e1",
       url: "https://gnovex.com",
     },
     {
-      id: 2,
-      title: "Class Assistant - Kumon Centre",
-      endDate: 2026,
-      text: "Facilitating advanced math and English study sessions, mentoring students to build strong independent learning and analytical skills.",
-      photo: Photo4,
-      color: "#483253e1",
-      url: "https://kumon.com",
-    },
-    {
       id: 3,
       title: "STEM Instructor - ComputerXplorers",
       startDate: 2026,
-      text: "Delivering interactive STEM sessions in block-based coding, game mechanics, and 3D design using TinkerCAD.",
+      text: "Delivering interactive STEM sessions in block-based coding, game mechanics, and 3D design using Scratch, Minecraft Education, and TinkerCAD. I turn complex ideas into hands-on challenges that build computational thinking and problem-solving skills.",
       photo: Photo3,
       color: "#483253e1",
       url: "https://ComputerXplorers.com",
     },
     {
       id: 4,
-      title: "Game Dev Online Tutor",
-      startDate: 2026,
-      text: "Teaching young learners game development fundamentals in Unity, covering C# scripting, 3D physics, and interactive design logic.",
-      photo: Photo6,
+      title: "Vice President - UWE Computer Science Society",
+      startDate: "February 2026",
+      text: "Plan and run a year-round programme of workshops, talks, hackathons, and conferences for the society's ~50 members, handling scheduling, content, and logistics. Build sponsor relationships across Bristol's tech industry to fund and resource events.",
+      photo: Photo1,
       color: "#483253e1",
     },
   ];
@@ -101,7 +90,10 @@ function App() {
         gsap.set(card, { y: 0, scale: 1, opacity: 1 });
       } else {
         const targetScale = i === 1 ? 0.8 : i === 2 ? 0.9 : 0.9;
-        gsap.set(card, { y: "100%", scale: targetScale, opacity: 0.2 });
+        // Cards waiting further down the queue start fully invisible so they
+        // don't overlap/ghost behind the immediately-next card (which was
+        // covering everything since it's last in DOM order).
+        gsap.set(card, { y: "100%", scale: targetScale, opacity: 0 });
       }
     });
 
@@ -228,7 +220,7 @@ function App() {
 
       {/* Render the clean sub-component right under the section header */}
       <Experience cards={cards} wrapperRef={wrapperRef} cardsRef={cardsRef} />
-
+      <Projects />
       <Skills />
       <Footer />
     </>

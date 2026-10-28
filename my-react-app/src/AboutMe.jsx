@@ -1,4 +1,4 @@
-import ProfilePic from "./assets/Chahrazed.jpeg";
+import ProfilePic from "../public/Shahrazed.png";
 import { motion } from "framer-motion";
 
 const containerVariants = {
@@ -82,11 +82,15 @@ function AboutMe() {
             Teacher
           </h2>
           <p className="card-text">
-            I am a Computer Science student who loves building smart software
-            and making data visual and interactive. Currently, I work as an AI
-            intern creating predictive data models at GNOVEX, and I teach tech
-            and coding skills to kids with ComputerXplorers. I blend software
-            engineering with education to make a real-world impact.
+            Second-year Computer Science student who loves building smart
+            software and turning data into something visual, interactive, and
+            genuinely useful. As an AI Intern at GNOVEX, I develop predictive
+            data models that help turn raw information into actionable insight.
+            Alongside this, I teach coding and technology skills to young
+            learners with ComputerXplorers, sparking curiosity in the next
+            generation of problem-solvers. I'm driven by the goal to blend
+            software engineering with education and create technology that makes
+            a real-world impact.
           </p>
         </motion.div>
       </div>
